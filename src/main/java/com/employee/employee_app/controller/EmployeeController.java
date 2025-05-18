@@ -38,10 +38,4 @@ public class EmployeeController {
     public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
         return service.updateEmployee(id, employee);
     }
-
-    @DeleteMapping("/{id}")
-    public String deleteEmployee(@PathVariable Long id) {
-        boolean removed = service.deleteEmployee(id);
-        return removed ? "Employee deleted" : "Employee not found";
-    }
 }
