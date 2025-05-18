@@ -34,8 +34,4 @@ public class EmployeeService {
         existing.setPosition(updated.getPosition());
         return existing;
     }
-
-    public boolean deleteEmployee(Long id) {
-        return employeeMap.remove(id) != null;
-    }
 }
